@@ -37,18 +37,19 @@ export default {
 </script>
 
 <style scoped>
-.tarbar-item {
-  flex: 1;
-  text-align: center;
-  height: 49px;
-  font-size: 14px;
-}
+  .tarbar-item {
+    flex: 1;
+    text-align: center;
+    height: 49px;
+    font-size: 14px;
+    padding-top: 5px;
+  }
 
-.tarbar-item img {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-  margin-bottom: 2px;
-}
+  .tarbar-item img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+  }
 
 </style>

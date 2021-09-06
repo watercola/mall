@@ -7,6 +7,7 @@ const Home = () => import('views/home/Home')
 const Category = () =>import('views/category/Category')
 const Cart = () =>import('views/cart/Cart')
 const Profile = () =>import('views/profile/Profile')
+const Detail = () =>import('views/detail/Detail')
 
 
 const routers = new Router({
@@ -14,23 +15,27 @@ const routers = new Router({
   routes: [
     {
       path: '',
-      redirect: 'home'
+      redirect: '/home'
     },
     {
-      path: 'home',
+      path: '/home',
       component: Home
     },
     {
-      path: 'category',
+      path: '/category',
       component: Category
     },
     {
-      path: 'cart',
+      path: '/cart',
       component: Cart
     },
     {
-      path: 'profile',
+      path: '/profile',
       component: Profile
+    },
+    {
+      path: '/detail/:iid',
+      component: Detail
     },
   ]
 })

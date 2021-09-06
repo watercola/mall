@@ -1,13 +1,21 @@
 <template>
-  <div>分类</div>
+  <div class="category">
+    <div class="line"></div>
+  </div>
 </template>
 
 <script>
-export default {
-  name: "Category"
-}
+
+  export default {
+    name: "Category",
+  }
 </script>
 
-<style scoped>
 
+<style scoped>
+  .line {
+    height: 1px;
+    transform: scale(0.5,0.5);
+    background-color: black;
+  }
 </style>
